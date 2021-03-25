@@ -10,8 +10,8 @@ public class DepartmentRepository {
     public ArrayList<Department> getAllDepartments(){
         ArrayList<Department> allDepartments = new ArrayList<Department>();
         try {
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/my_company", "dean", "securePassword");
-            PreparedStatement stmt = conn.prepareStatement("SELECT * FROM departments");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/exercise_15-03", "Patrick", "beethoven");
+            PreparedStatement stmt = conn.prepareStatement("SELECT * FROM dept");
             ResultSet rs = stmt.executeQuery();
             while(rs.next()){
                 Department tmp = new Department(
