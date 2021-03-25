@@ -14,12 +14,11 @@ public class EmployeeController {
     private EmployeeRepository employeeRepo = new EmployeeRepository();
 
     @GetMapping("/employees")
-    @ResponseBody
-    public String getAllEmployees(Model model){
+    public String allEmployees(Model model){
         ArrayList<Employee> getAllEmployees = employeeRepo.getAllEmployees();
         model.addAttribute("employees", getAllEmployees);
 
-        return getAllEmployees.toString();
+        return "employees";
 
     }
 }

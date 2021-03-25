@@ -24,7 +24,7 @@ public class Employee {
         }
 
         public int getEmpNo() {
-            return empNo;
+            return this.empNo;
         }
 
         public void setEmpNo(int empNo) {
@@ -32,7 +32,7 @@ public class Employee {
         }
 
         public String geteName() {
-            return eName;
+            return this.eName;
         }
 
         public void seteName(String eName) {
@@ -40,7 +40,7 @@ public class Employee {
         }
 
         public String getJob() {
-            return job;
+            return this.job;
         }
 
         public void setJob(String job) {
@@ -48,7 +48,7 @@ public class Employee {
         }
 
         public int getMgrNo() {
-            return mgrNo;
+            return this.mgrNo;
         }
 
         public void setMgrNo(int mgrNo) {
@@ -56,7 +56,7 @@ public class Employee {
         }
 
         public String getHiredate() {
-            return hiredate;
+            return this.hiredate;
         }
 
         public void setHiredate(String hiredate) {
@@ -64,7 +64,7 @@ public class Employee {
         }
 
         public int getSal() {
-            return sal;
+            return this.sal;
         }
 
         public void setSal(int sal) {
@@ -72,7 +72,7 @@ public class Employee {
         }
 
         public int getComm() {
-            return comm;
+            return this.comm;
         }
 
         public void setComm(int comm) {
@@ -80,7 +80,7 @@ public class Employee {
         }
 
         public int getDeptNo() {
-            return deptNo;
+            return this.deptNo;
         }
 
         public void setDeptNo(int deptNo) {
