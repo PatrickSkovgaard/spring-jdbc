@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Employees</title>
+    <link rel="stylesheet" th:href="@{style.css}"  type="text/css">
 </head>
 <body>
     <h1>An overview of our employees</h1>
 
     <table>
+        <p>Emp no, Name, Job, Mgr no., Hiredate, Sal, Comm, Dept no.</p>
         <tr
                 th:each="employee : ${employees}">
-            <td th:text="${employees.getEmpNo()}"></td>
-            <td th:text="${employees.geteName()}"></td>
-            <td th:text="${employees.getJob()}"></td>
-            <td th:text="${employees.getMgrNo()}"></td>
-            <td th:text="${employees.getHiredate()}"></td>
-            <td th:text="${employees.getSal()}"></td>
-            <td th:text="${employees.getComm()}"></td>
-            <td th:text="${employees.getDeptNo()}"></td>
+            <td th:text="${employee.getEmpNo()}"></td>
+            <td th:text="${employee.geteName()}"></td>
+            <td th:text="${employee.getJob()}"></td>
+            <td th:text="${employee.getMgrNo()}"></td>
+            <td th:text="${employee.getHiredate()}"></td>
+            <td th:text="${employee.getSal()}"></td>
+            <td th:text="${employee.getComm()}"></td>
+            <td th:text="${employee.getDeptNo()}"></td>
         </tr>
     </table>
 
