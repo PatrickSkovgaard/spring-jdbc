@@ -90,7 +90,7 @@ public class Employee {
 
         @Override
         public String toString (){
-            return "Employees{" +
+            return
                     " | Employee number: " + empNo +
                     " | Employee name: " + eName +
                     " | Employee's job: " + job +
